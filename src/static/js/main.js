@@ -1,5 +1,4 @@
 (()=>{
-	console.log(1)
 	svg4everybody()
-	lazyload()
+	console.log(1)
 })()
