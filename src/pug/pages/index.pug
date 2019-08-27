@@ -1,0 +1,21 @@
+extends ../layout/main
+
+block variables
+	-var title = 'Main | Gulp Template'
+
+block content
+	h2 pug!
+	hr
+	.svgtest
+		p svg test
+		hr
+		+icon('home')
+		hr
+		+icon('support')
+		hr
+		+icon('phone-call')
+	.bp
+	.image
+		p img test
+		hr
+		img.lazyload (data-src="./static/img/1.png" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=")
