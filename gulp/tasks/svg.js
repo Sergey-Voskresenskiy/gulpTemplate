@@ -1,6 +1,10 @@
 module.exports= ()=>{
 	$.gulp.task('svg', ()=>{
 		return $.gulp.src('./src/static/img/svg/*.svg')
+			.on ("error", $.gp.notify.onError ({
+				message: "Error: <%= error.message %>",
+				title: "Error running svg"
+			}))
 			.pipe($.gp.svgmin({
 				js2svg: { pretty: true }
 			}))

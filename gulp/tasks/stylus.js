@@ -15,6 +15,10 @@ module.exports = () => {
 			}))
 			.pipe ($.gp.csso ())
 			.pipe ($.gp.sourcemaps.write ())
+			.on ("error", $.gp.notify.onError ({
+				message: "Error: <%= error.message %>",
+				title: "Error running styl"
+			}))
 			.pipe ($.gulp.dest ('build/static/css'))
 			.pipe($.browserSync.reload({stream: true}));
 
