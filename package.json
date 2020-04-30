@@ -26,7 +26,7 @@
     "gulp-tinypng-unlimited": "^1.0.3"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lazyload": "^2.0.0-rc.2",
     "reset-css": "^4.0.1",
     "svg4everybody": "^2.1.9"
